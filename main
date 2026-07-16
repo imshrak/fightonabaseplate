@@ -1,1 +1,96 @@
-loadstring(game:HttpGet('https://gate.sirius.menu/gateway?id=sid_6pwkpm387bmf'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local Window = Rayfield:CreateWindow({
+    Name = "Fight on a Baseplate",
+    ScriptID = "sid_0fq7hur8s9y3",
+    LoadingTitle = "Loading...",
+    LoadingSubtitle = "by shrak",
+    ConfigurationSaving = { Enabled = false },
+    KeySystem = false
+})
+
+-- English Tab
+local EnglishTab = Window:CreateTab("English", 0)
+EnglishTab:CreateParagraph({
+    Title = "Info",
+    Content = "This script is currently patched due to recent game changes, but a fixed version is already being worked on and will be back up soon. It stays completely free and keyless - no keys, no payments, ever. For real-time updates on when script is back up join our Discord server."
+})
+EnglishTab:CreateButton({
+    Name = "Copy Discord Link",
+    Callback = function()
+        setclipboard("https://discord.gg/hEbP6rWKy2")
+        Rayfield:Notify({ Title = "Copied", Content = "Discord link copied to clipboard.", Duration = 3 })
+    end
+})
+
+-- Spanish Tab
+local SpanishTab = Window:CreateTab("Spanish", 0)
+SpanishTab:CreateParagraph({
+    Title = "Info",
+    Content = "Este script está actualmente parcheado debido a cambios recientes en el juego, pero ya se está trabajando en una versión corregida y volverá a estar disponible pronto. Sigue siendo completamente gratuito y sin claves - sin claves, sin pagos, nunca. Para actualizaciones en tiempo real sobre cuándo vuelve a estar disponible, únete a nuestro servidor de Discord."
+})
+SpanishTab:CreateButton({
+    Name = "Copiar enlace de Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/hEbP6rWKy2")
+        Rayfield:Notify({ Title = "Copiado", Content = "Enlace de Discord copiado al portapapeles.", Duration = 3 })
+    end
+})
+
+-- Hindi Tab
+local HindiTab = Window:CreateTab("Hindi", 0)
+HindiTab:CreateParagraph({
+    Title = "Info",
+    Content = "यह स्क्रिप्ट हाल ही में गेम में हुए बदलावों के कारण वर्तमान में पैच की गई है, लेकिन इसका फिक्स्ड वर्शन पहले से ही तैयार किया जा रहा है और जल्द ही वापस आ जाएगा। यह पूरी तरह से मुफ्त और बिना किसी कुंजी के है - कोई कुंजी नहीं, कोई भुगतान नहीं, कभी नहीं। स्क्रिप्ट वापस आने पर रीयल-टाइम अपडेट के लिए हमारे Discord सर्वर से जुड़ें।"
+})
+HindiTab:CreateButton({
+    Name = "Discord लिंक कॉपी करें",
+    Callback = function()
+        setclipboard("https://discord.gg/hEbP6rWKy2")
+        Rayfield:Notify({ Title = "कॉपी हो गया", Content = "Discord लिंक क्लिपबोर्ड पर कॉपी कर दिया गया।", Duration = 3 })
+    end
+})
+
+-- Mandarin Tab
+local MandarinTab = Window:CreateTab("Mandarin", 0)
+MandarinTab:CreateParagraph({
+    Title = "Info",
+    Content = "此脚本由于近期游戏更新目前已被修补，但修复版本已在开发中，很快就会恢复。它完全免费且无需密钥 - 永远无需密钥，无需付费。要获取脚本恢复的实时更新，请加入我们的 Discord 服务器。"
+})
+MandarinTab:CreateButton({
+    Name = "复制 Discord 链接",
+    Callback = function()
+        setclipboard("https://discord.gg/hEbP6rWKy2")
+        Rayfield:Notify({ Title = "已复制", Content = "Discord 链接已复制到剪贴板。", Duration = 3 })
+    end
+})
+
+-- French Tab
+local FrenchTab = Window:CreateTab("French", 0)
+FrenchTab:CreateParagraph({
+    Title = "Info",
+    Content = "Ce script est actuellement patché en raison de récents changements dans le jeu, mais une version corrigée est déjà en cours de développement et sera bientôt de retour. Il reste complètement gratuit et sans clé - pas de clés, pas de paiements, jamais. Pour des mises à jour en temps réel sur le retour du script, rejoignez notre serveur Discord."
+})
+FrenchTab:CreateButton({
+    Name = "Copier le lien Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/hEbP6rWKy2")
+        Rayfield:Notify({ Title = "Copie", Content = "Lien Discord copié dans le presse-papiers.", Duration = 3 })
+    end
+})
+
+-- Portuguese Tab
+local PortugueseTab = Window:CreateTab("Portuguese", 0)
+PortugueseTab:CreateParagraph({
+    Title = "Info",
+    Content = "Este script está atualmente patched devido a mudanças recentes no jogo, mas uma versão corrigida já está sendo trabalhada e estará de volta em breve. Continua completamente gratuito e sem chaves - sem chaves, sem pagamentos, nunca. Para atualizações em tempo real sobre quando o script estiver de volta, entre em nosso servidor do Discord."
+})
+PortugueseTab:CreateButton({
+    Name = "Copiar link do Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/hEbP6rWKy2")
+        Rayfield:Notify({ Title = "Copiado", Content = "Link do Discord copiado para a área de transferência.", Duration = 3 })
+    end
+})
