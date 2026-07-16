@@ -4,7 +4,7 @@ local LocalPlayer = Players.LocalPlayer
 
 local Window = Rayfield:CreateWindow({
     Name = "Fight on a Baseplate",
-    ScriptID = "sid_0fq7hur8s9y3",
+    ScriptID = "sid_mzso9v2drojs",
     LoadingTitle = "Loading...",
     LoadingSubtitle = "by shrak",
     ConfigurationSaving = { Enabled = false },
