@@ -7,7 +7,6 @@ local Window = Rayfield:CreateWindow({
    Icon = "crosshair",
    LoadingTitle = "Loading...",
    LoadingSubtitle = "By shrak",
-   ScriptID = "sid_mzso9v2drojs"
 })
 
 -- Create the Indo tab
@@ -16,14 +15,14 @@ local Tab = Window:CreateTab("Info")
 -- Create the paragraph
 local Paragraph = Tab:CreateParagraph({
    Title = "Rayfield Status",
-   Content = "Rayfield (our script host) is currently experiencing issues, please wait a few minutes and try again or join our discord server to be notified when back up! discord.gg/rFTRKa2dP5"
+   Content = "Rayfield (our script host) is currently experiencing issues, please wait a few minutes and try again or join our discord server to be notified when back up! discord.gg/hEbP6rWKy2"
 })
 
 -- Create a button to copy Discord invite
 local CopyButton = Tab:CreateButton({
    Name = "Copy Discord Invite",
    Callback = function()
-      setclipboard("https://discord.gg/rFTRKa2dP5")
+      setclipboard("https://discord.gg/hEbP6rWKy2")
       -- Notify user that it was copied
       Rayfield:Notify({
          Title = "Copied!",
